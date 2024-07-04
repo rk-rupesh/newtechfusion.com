@@ -1,0 +1,702 @@
+/* *********************** global css start here *********************** */
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "gilroy-bold";
+  /* src: url("./font/gilroy/Gilroy-Bold.ttf"); */
+  src: url("/font/gilroy/Gilroy-Bold.ttf");
+}
+:root {
+  /* font-family */
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --gilroy-bold: "gilroy-bold", sans-serif;
+  --taviraj: "Taviraj, serif;";
+
+  /* font-weight  */
+  --fw_medium: 400;
+  --fw_bold: 600;
+  --fw_thin: 100;
+  /* heading size  */
+  --font_size_58: clamp(30px, 4.681vw, 58px);
+  --font_size_50: clamp(24px, 4vw, 50px);
+  --font-size_32: clamp(20px, 2.581vw, 32px);
+  --font_size_28: clamp(20px, 2.258vw, 28px);
+  --font_size_24: clamp(16px, 1.935vw, 24px);
+  --font_size_20: clamp(14px, 1.613vw, 20px);
+  --font-size_18: clamp(13px, 1.452vw, 18px);
+  --font_size_17: clamp(12px, 1.371vw, 17px);
+  --font_size_16: clamp(11px, 1.29vw, 16px);
+  --font_size_14: clamp(10px, 1.129vw, 14px);
+  /* colors */
+  --white: #fff;
+  --light-gray: #717171;
+  --light-gray1: #666666;
+  --color1: #02b2e9;
+  --color2: #01212b;
+  --color3: #082832;
+  --color4: #effbff;
+  --color5: #f2fcff;
+  --color6: #1b2022;
+  --portfolio-color1: #aeecff;
+  --portfolio-color2: #ffc995;
+  --portfolio-color3: #d9fca5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-section-heading {
+  font-size: var(--font_size_50);
+  font-family: var(--gilroy-bold);
+  line-height: clamp(35px, 4.839vw, 60px);
+  margin-bottom: clamp(20px, 2.419vw, 30px);
+  text-align: center;
+  color: var(--color6);
+}
+.main-section-para {
+  font-size: var(--font-size_18);
+  text-align: center;
+  color: var(--light-gray);
+  margin-bottom: clamp(20px, 3.871vw, 48px);
+  font-family: var(--poppins);
+}
+/* *********************** global css end here *********************** */
+
+.social-links {
+  width: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: fixed;
+  background: #fff;
+  border-radius: 4px 0 0 4px;
+  right: 0;
+  top: calc(50vh - 81.5px);
+  padding: 10px 0;
+  height: 163px;
+  z-index: 999999;
+}
+.social-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  align-content: center;
+  text-align: center;
+}
+.social-link:hover {
+  background-color: var(--color1);
+}
+.social-link:hover > img {
+  filter: invert(1);
+}
+/* *********************** hero section css start here *********************** */
+
+/* #navbarSupportedContent {
+  max-width: max-content;
+} */
+
+#navbarSupportedContent .nav-link {
+  font-size: var(--font-size_18);
+  font-weight: 500;
+  font-family: var(--poppins);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.navbar-brand img {
+  width: clamp(130px, 16.774vw, 208px);
+}
+button.navbar-toggler {
+  background: linear-gradient(to right, #02b2e9, #fe932b);
+  width: 45px;
+  padding: 0;
+  height: 40px;
+  border: none;
+}
+button.navbar-toggler .navbar-toggler-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+.hero-section {
+  /* background-color: #192039; */
+  background-image: url("../images/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-position: center; */
+}
+.hero-heading {
+  font-size: var(--font_size_58);
+  font-family: var(--poppins);
+  line-height: clamp(50px, 9.355vw, 90px);
+}
+.hero-para {
+  font-size: var(--font_size_24);
+  font-family: var(--poppins);
+  font-weight: var(--fw_medium);
+  max-width: 950px;
+  margin: auto;
+}
+.hero-text-section {
+  margin-top: clamp(20px, 4.839vw, 60px);
+}
+.gradient-text {
+  font-size: var(--font_size_58);
+  font-weight: bold;
+  background: linear-gradient(to right, #02b2e9, #fe932b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.taviraj-font {
+  font-family: var(--taviraj);
+  font-weight: var(--fw_medium);
+  padding: clamp(7px, 0.806vw, 10px) clamp(16px, 2.903vw, 36px);
+  border-radius: 50px;
+  box-shadow: 0px -1px 1px 1px #88c8e6, 1px 0px 1px 1px #fa942f,
+    0px 1px 1px 1px #b0dab2de, -1px 0px 1px 1px #5ebcf3;
+  width: clamp(175px, 29.839vw, 370px);
+  display: inline-block;
+  line-height: normal;
+}
+.video-section {
+  text-align: center;
+  padding: clamp(40px, 8.065vw, 100px) 0;
+}
+
+video.video {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  border-radius: clamp(15px, 3.871vw, 48px);
+  box-shadow: 0px -1px 5px 0px #88c8e6, 1px 0px 5px 0px #e1e0cb,
+    0px 1px 5px 0px #b0d2da, -1px 0px 5px 0px #5ebcf3;
+}
+/* .gradient-border {
+  border: 1px solid red;
+  border-image:  linear-gradient(to right, #02b2e9, #fe932b) 1;
+  padding: 10px;
+} */
+/* *********************** hero section css end here *********************** */
+/* *********************** our profile css start here *********************** */
+.our-profile {
+  background-color: var(--color5);
+  padding: clamp(40px, 8.065vw, 100px) 0;
+}
+.our-profile .container {
+  position: relative;
+}
+.our-profile .container .row {
+  position: relative;
+  z-index: 23;
+}
+.our-profile .container::before,
+.our-profile .container::after {
+  content: "";
+  width: 412px;
+  height: 412px;
+  border-radius: 50%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.our-profile .container::before {
+  background-image: url("../images/info-bg.svg");
+  left: -120px;
+  top: 60px;
+}
+.our-profile .container::after {
+  background-image: url("../images/orange-bg.svg");
+  bottom: -138px;
+  right: 0px;
+  z-index: 0;
+}
+.our-profile .inner-div {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 14px #0000002b;
+  height: 100%;
+}
+.our-profile .inner-div h4 {
+  font-size: var(--font_size_20);
+  font-family: var(--poppins);
+  font-weight: 500;
+}
+.our-profile .inner-div p {
+  font-size: var(--font_size_14);
+  color: var(--light-gray1);
+  font-weight: var(--fw_medium);
+}
+
+/* *********************** our profile css end here *********************** */
+/* *********************** servicee  css start here *********************** */
+
+.services {
+  padding: clamp(20px, 3.226vw, 40px) 0;
+}
+.service-block {
+  border-radius: 12px;
+  padding: 6px;
+  background: var(--color4);
+  height: 100%;
+  position: relative;
+  transition: all 1s linear;
+  backface-visibility: hidden;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+.our-service-card:hover .service-block {
+  transform: rotateY(180deg);
+  perspective: 500px;
+}
+.service-block .image-block {
+  width: 100%;
+  height: clamp(180px, 24.194vw, 300px);
+  display: flex;
+}
+.service-block img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  width: 100%;
+}
+.inner-sevice {
+  backface-visibility: hidden;
+}
+.inner-service-back {
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 12px;
+  padding: 6px;
+  background: var(--color4);
+  backface-visibility: hidden;
+}
+.inner-service-back p {
+  font-size: var(--font-size_18);
+  font-weight: 500;
+  color: var(--color6);
+  height: inherit;
+  overflow: hidden;
+  text-align: justify;
+  text-overflow: ellipsis;
+}
+.service-block h5 {
+  font-size: var(--font_size_24);
+  padding: clamp(16px, 3.226vw, 40px) 0 16px 0;
+}
+.service-block .button-grp {
+  padding-bottom: clamp(16px, 3.226vw, 40px);
+}
+
+.service-block button {
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px solid var(--color3);
+  font-size: var(--font_size_16);
+  font-weight: var(--fw_medium);
+  color: var(--color3);
+  background-color: transparent;
+}
+.service_icons img {
+  height: clamp(35px, 5.645vw, 70px);
+}
+.service-block button:hover {
+  color: var(--white);
+  background-color: var(--color3);
+}
+.service_icons1 {
+  transform: rotateZ(180deg);
+}
+.service_icons1 img {
+  transform: rotateZ(180deg);
+  height: clamp(35px, 5.645vw, 70px);
+}
+/* *********************** servicee css end here *********************** */
+/* *********************** portfolio css start here *********************** */
+.portfolio {
+  padding: clamp(40px, 8.065vw, 100px) 0;
+  background-color: var(--color5);
+}
+.portfolio-inner {
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.portfolio-inner:hover {
+  transform: translateY(-20px);
+}
+.portfolio-inner h4 {
+  font-size: var(--font_size_28);
+}
+.portfolio-inner img {
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.portfolio-inner:hover img {
+  transform: scale(1.03);
+}
+/* *********************** portfolio css end here *********************** */
+
+/* *********************** Industries css start here *********************** */
+.industries {
+  padding: clamp(20px, 3.226vw, 40px) 0;
+}
+.industries-service-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.industries-service {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  max-width: max-content;
+}
+.industries-service img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+.industries-service h5 {
+  font-size: var(--font_size_16);
+}
+/* *********************** Industries css end here *********************** */
+
+/* *********************** our client css start here *********************** */
+.our-client {
+  padding: clamp(20px, 3.226vw, 40px) 0;
+  background-color: var(--color5);
+}
+.success-stories {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.our-client .success-stories-first img {
+  width: clamp(20px, 3vw, 30px);
+  margin: 5px 3px 0 0;
+}
+
+.success-stories-first h3 {
+  font-size: var(--font-size_32);
+  color: var(--white);
+  font-weight: var(--fw_medium);
+  font-family: var(--gilroy-bold);
+  margin-bottom: clamp(22px, 2.581vw, 32px);
+}
+.our-client .success-stories-second img {
+  width: clamp(35px, 4.677vw, 58px);
+}
+.success-stories-second h5 {
+  font-size: var(--font_size_16);
+  color: var(--white);
+  font-weight: var(--fw_bold);
+  font-family: var(--poppins);
+}
+.success-stories-second p {
+  font-size: var(--font_size_14);
+  font-weight: var(--fw_medium);
+  color: var(--white);
+  font-family: var(--poppins);
+}
+
+.success-stories-right {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.our-client .success-stories-first-right img {
+  width: clamp(16px, 2.5vw, 23px);
+  margin: -2px 4px 0 0;
+}
+
+.success-stories-first-right h3 {
+  font-size: var(--font_size_20);
+  color: var(--color6);
+  font-weight: var(--fw_medium);
+  font-family: var(--gilroy-bold);
+  margin-bottom: clamp(10px, 1.25vw, 16px);
+}
+.our-client .success-stories-second-right img {
+  width: clamp(30px, 4.677vw, 40px);
+}
+.success-stories-second-right h5 {
+  font-size: var(--font_size_14);
+  color: var(--light-gray1);
+  font-weight: var(--fw_bold);
+  font-family: var(--poppins);
+}
+.success-stories-second-right p {
+  font-size: var(--font_size_14);
+  font-weight: var(--fw_medium);
+  color: var(--light-gray);
+  font-family: var(--poppins);
+}
+.our-client .owl-nav {
+  margin: 30px 0;
+}
+.our-client .owl-nav button {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background: none !important;
+}
+.our-client .owl-nav button.owl-prev::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-image: url("./../images/carousel-icon.svg");
+  background-size: contain;
+  top: 0;
+  left: 0;
+}
+.our-client .owl-nav button.owl-next::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-image: url("./../images/carousel-icon.svg");
+  background-size: contain;
+  transform: rotateZ(180deg);
+  top: 0;
+  left: 0;
+}
+.our-client .owl-nav button.owl-prev:hover::before {
+  background-image: url("./../images/carousel-icon-hover.svg");
+  transform: rotateZ(180deg);
+}
+.our-client .owl-nav button.owl-next:hover::before {
+  background-image: url("./../images/carousel-icon-hover.svg");
+  transform: rotateZ(0deg);
+  background-color: transparent !important;
+}
+.our-client .owl-nav button span {
+  display: none;
+}
+/* *********************** our client css end here *********************** */
+/* *********************** let's create start end here *********************** */
+.lets-create {
+  background-color: var(--color5);
+  padding: clamp(20px, 3.226vw, 40px) 0;
+}
+.lets-create .requirement {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #8080803b;
+  padding: 20px;
+  background-color: var(--white);
+}
+.lets-create .requirement h6 {
+  font-size: var(--font_size_20);
+  text-align: center;
+  color: var(--color6);
+}
+.lets-create .requirement p {
+  font-size: var(--font_size_14);
+  text-align: center;
+  color: var(--light-gray);
+}
+.requirement .form-control {
+  border-radius: 4px;
+  background-color: rgb(217, 217, 217, 0.2);
+  box-shadow: none;
+  border: 1px solid #c8c8c8;
+  font-size: var(--font_size_16);
+  font-family: var(--poppins);
+}
+.requirement .form-control::placeholder {
+  color: var(--light-gray1);
+}
+
+.addres-info p,
+.addres-info p a {
+  font-size: var(--font_size_20);
+  font-family: var(--poppins);
+  font-weight: var(--fw_medium);
+  color: #082832;
+  text-decoration: none;
+}
+/* *********************** let's create css end here *********************** */
+/* *********************** footer css start here *********************** */
+footer {
+  background: linear-gradient(to bottom, #01212b, #000c10);
+  padding-top: 60px;
+}
+
+footer .inner-footer .inner-column {
+  max-width: max-content;
+}
+.footer-main-heading {
+  color: var(--color1);
+  font-size: var(--font_size_20);
+  line-height: 30px;
+  font-weight: var(--fw_bold);
+  font-family: var(--poppins);
+}
+.footer-link a {
+  font-size: var(--font_size_17);
+  font-weight: var(--fw_medium);
+  font-family: var(--poppins);
+  color: var(--white);
+  text-decoration: none;
+}
+.copy-right-section {
+  background-color: var(--color2);
+}
+.copy-right {
+  font-size: var(--font-size_18);
+  font-family: var(--poppins);
+  color: var(--white);
+}
+
+/* .cursor-dot {
+  width: 12px; 
+  height: 12px; 
+  background-color: rgb(136, 231, 11); 
+  border-radius: 50%;
+  position: absolute; 
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: transform 0.1s ease;
+} */
+
+/* ***********************footer css start here *********************** */
+
+/*################################## service page  ##################################*/
+.high-impact {
+  padding: clamp(20px, 3.226vw, 40px) 0;
+  background-color: var(--color5);
+}
+.high-impact .main-section-para {
+  max-width: 775px;
+  margin: auto;
+}
+.high-impact .strategy {
+  padding-top: clamp(20px, 3.226vw, 40px);
+}
+.high-impact .strategy .strategy-inner {
+  background: linear-gradient(to bottom, #fff, #fffe5c26);
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 9px;
+}
+.high-impact .strategy img {
+  width: clamp(50px, 4.839vw, 60px);
+  height: clamp(50px, 4.839vw, 60px);
+  object-fit: contain;
+}
+.high-impact .strategy h6.strategy-heading {
+  font-size: var(--font_size_16);
+  font-weight: 500;
+  font-family: var(--poppins);
+  color: var(--color6);
+}
+.inner-pages-banner {
+  height: clamp(200px, 33.871vw, 420px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color2);
+}
+.inner-pages-banner h1 {
+  color: var(--white);
+  font-size: var(--font_size_58);
+  font-family: var(--gilroy-bold);
+}
+/*################################## service page  ##################################*/
+/*################################## portfolio page  ##################################*/
+.recent-work {
+  padding: clamp(40px, 8.065vw, 100px) 0;
+}
+/*################################## portfolio page  ##################################*/
+/*################################## mobile page  ##################################*/
+.mobile-devlopment {
+  padding: clamp(40px, 8.065vw, 100px) 0;
+  background-color: var(--color5);
+}
+.mobile-devlopment h5 {
+  font-size: var(--font_size_28);
+  color: var(--color1);
+  font-family: var(--poppins);
+  font-size: 500;
+}
+.mobile-devlopment p {
+  font-size: var(--font-size_18);
+  font-family: var(--poppins);
+  color: var(--light-gray);
+  line-height: clamp(28px, 2.984vw, 37px);
+}
+
+.project-approach {
+  padding: clamp(20px, 3.226vw, 40px) 0;
+}
+.approach {
+  box-shadow: 0px 0px 2px 0 #29394e;
+  border-radius: 12px;
+  padding: clamp(10px, 1.21vw, 15px);
+}
+.approach:hover {
+  background: linear-gradient(to bottom, #fff, #fff1e3);
+}
+.approach h5,
+.stage h5 {
+  font-size: var(--font-size_18);
+  font-family: var(--poppins);
+  font-weight: var(--fw_bold);
+}
+.approach p,
+.stage p {
+  font-size: var(--font_size_16);
+  font-family: var(--poppins);
+  color: var(--light-gray);
+  margin: 0;
+}
+.approach-img {
+  max-width: 57px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: start;
+}
+.our-stack {
+  padding-top: clamp(40px, 8.065vw, 100px);
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom, #f2fcff 50%, #ffeede 50%);
+}
+.stage {
+  box-shadow: 0px 0px 2px 0 #29394e;
+  border-radius: 12px;
+}
+.stage h2 {
+  background: linear-gradient(to right, #02b2e9, #fe932b);
+  font-size: var(--font-size_32);
+  font-weight: var(--fw_bold);
+  font-family: var(--poppins);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  max-width: max-content;
+}
+/*################################## mobile page  ##################################*/
